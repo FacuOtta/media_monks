@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/index.css">
+  <link rel="icon" href="./assets/images/favicon.ico" type="image/ico" sizes="16x16">
+  <title>Media Monks</title>
+</head>
+<body>
+  <div class="patience">
+    <div style="position: relative;">
+      <img src="./assets/images/monk.png" alt="monk">
+      <div class="loading-message">
+        <div>Patience</div>
+        <div style="display: none;">Patience, young padawan...</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="slider" style="top:-2000px">
+    <div class="slide">
+      <img src="./assets/images/background.jpg" alt="media monks">
+    </div>
+
+    <div id="sentencesContainer">
+      <div class="sentence first">WE ARE BREAKING<br>OUR VOW<br>OF SILENCE</div>
+      <div class="sentence second">TALENT IS GIVEN<br>TRUE SKILL IS<br>EARNED</div>
+      <div class="sentence third">BE FLEXIBLE TO<br>CHANGE AND<br>STURDY IN <br />CONVICTION</div>
+      <div class="sentence fourth">USE MANY SKILLS<br>YET WORK AS ONE</div>
+      <div class="sentence fifth">TO MASTER<br>ANYTHING FIND <br/>INTEREST IN<br /> EVERYTHING</div>
+      <div class="sentence sixth">INDIVIDUALS <br />FLOURISH<br/> IF CULTURE <br /> AND WISDOM<br /> ARE SHARED</div>
+      <div class="sentence seventh">TRAIN FOR<br/> PERFECTION BUT<br/> AIM FOR MORE</div>
+      <div class="sentence eighth">TAKE PRIDE IN YOUR<br> WORK BUT DO NOT<br/> SEAK PRAISE</div>
+      <div class="sentence ninth">TEMPORARY<br/> SACRIFICE BRINGS<br/> LASTING RESULTS</div>
+      <div id="lastMessage">
+        <div class="title">BECOME A MONK</div>
+        <div class="body">
+          Interested in joining our monastery? <br />
+          Check out our current openings on <a href="https://mediamonks.com/careers">mediamonks.com/careers</a>. <br />
+          <ul class="social">
+            <li>
+              <span class="email"></span> Mailons
+            </li>
+            <li>
+              <span class="facebook"></span> Facebook
+            </li>
+            <li>
+              <span class="twitter"></span> Twitter
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <div id="logo">
+      MEDIA MONKS
+    </div>
+
+    <div class="temple-open">
+      In January 2011, after a decade of digital, we opened the doors to our temple. <br>
+      Follow our noble eightfold digital path to enlightenment here.
+    </div>
+
+    <ul class="nav">
+      <li onclick="goToSlide(0)">
+        <span class="selected"></span>
+      </li>
+      <li onclick="goToSlide(1)">
+        <span>1</span>
+      </li>
+      <li onclick="goToSlide(2)">
+        <span>2</span>
+      </li>
+      <li onclick="goToSlide(3)">
+        <span>3</span>
+      </li>
+      <li onclick="goToSlide(4)">
+        <span>4</span>
+      </li>
+      <li onclick="goToSlide(5)">
+        <span>5</span>
+      </li>
+      <li onclick="goToSlide(6)">
+        <span>6</span>
+      </li>
+      <li onclick="goToSlide(7)">
+        <span>7</span>
+      </li>
+      <li onclick="goToSlide(8)">
+        <span>8</span>
+      </li>
+      <li onclick="goToSlide(9)">
+        <span></span>
+      </li>
+      <li class="tab-counter-msg">
+        Step <span id="counter">1</span> out of 8 on the path to digital enlightenment
+      </li>
+    </ul>
+    <div class="button left" id="prevBtn">
+      <img src="./assets/images/arrow-left.png" onclick="prev()" alt="prevImage">
+    </div>
+    <div class="button right" id="nextBtn">
+      <img src="./assets/images/arrow-right.png" onclick="next()" alt="nextImage">
+    </div>
+  </div>
+  <script src="./assets/js/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,281 @@
+@font-face {
+  font-family: 'KlavikaLight';
+  src: url('../font/klavika-light-webfont.woff')
+}
+
+@font-face {
+  font-family: 'KlavikaRegular';
+  src: url('../font/klavika-regular-webfont.woff')
+}
+
+@font-face {
+  font-family: 'KlavikaMedium';
+  src: url('../font/klavika-medium-webfont.woff')
+}
+
+@font-face {
+  font-family: 'KlavikaBold';
+  src: url('../font/klavika-bold-webfont.woff')
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-50%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.patience {
+  font-family: 'KlavikaLight';
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  height: 100%;
+  text-align: center;
+  background-color: #000;
+  color:#fff;
+}
+
+.patience img {
+  margin-bottom: 10px;
+  animation: 1s ease-out 0s 1 slideInFromTop;
+}
+
+.slider {
+  margin: 0 auto;
+  overflow-x: hidden;
+  background-color: #000;
+  position: relative;
+}
+
+.slide {
+  transition: transform 1s;
+  display: flex;
+  max-width: 12226px; /* original image width */
+}
+
+.slide img {
+  display: inline-flex;
+  max-width: 12226px; /* original image width */
+}
+
+.button {
+  position: absolute;
+  top: 45%;
+}
+
+.button.left {
+  left: 10px;
+  cursor: pointer;
+}
+
+.button.right {
+  right: 10px;
+  cursor: pointer;
+}
+
+.nav {
+  font-family: 'KlavikaLight';
+  font-size: 13px;
+  position: absolute;
+  top: 90%;
+  left: 0;
+  display: flex;
+}
+
+.nav li {
+  display: inline-flex;
+  color: #fff;
+  border: 1px dotted;
+  text-align: center;
+  padding: 2px 4px;
+  border-right: 0;
+}
+
+.nav li:nth-child(10) {
+  border: 1px dotted;
+}
+
+.nav li:last-child {
+  border: 0;
+  padding-left: 10px;
+  display: none;
+}
+
+.nav li:hover {
+  cursor: pointer;
+}
+
+.nav li span {
+  font-family: 'KlavikaLight';
+  font-size: 12px;
+  display: block;
+  padding: 1px 6px;
+  width: 5px;
+}
+
+.nav li span.selected {
+  background-color: #fff;
+}
+
+.nav .nav-item {
+  border: 0;
+  background: none;
+  border-right: 1px dotted;
+  color: #fff;
+  text-align: center;
+  padding: 2px 6px;
+}
+
+.nav-item:focus {
+  outline: 0;
+}
+
+.sentence {
+  font-family: 'KlavikaLight';
+  position: absolute;
+  font-size: 50px;
+  padding: 15px 25px;
+  color: #fff;
+  text-decoration: underline;
+  display: none;
+  animation: 1s ease-out 0s 1 slideInFromTop;
+}
+
+.sentence.first {
+  display: block;
+  top: 0;
+}
+
+.sentence.second {
+  top: 30%;
+  left: 50px;
+}
+
+.sentence.third {
+  top: 30%;
+  left: 50px;
+}
+
+.sentence.fourth { 
+  top: 35%;
+  right: 50px;
+}
+
+.sentence.fifth {
+  top: 40%;
+  right: 50px;
+}
+
+.sentence.sixth {
+  top: 30%;
+  right: 50px;
+}
+
+.sentence.seventh {
+  top: 40%;
+  left: 50px;
+}
+
+.sentence.eighth {
+  top: 40%;
+  left: 50px;
+}
+
+.sentence.ninth {
+  top: 40%;
+  left: 50px;
+}
+
+.temple-open {
+  font-family: 'KlavikaLight';
+  font-size: 14px;
+  color: #fff;
+  position: absolute;
+  left: 40px;
+  top: 85%;
+}
+
+.social {
+  display: flex;
+  text-align: left;
+}
+
+.social li {
+  display: inline-flex;
+  padding-left: 20px;
+}
+
+.social .email,
+.social .facebook,
+.social .twitter {
+  width: 0;
+  display: block;
+  height: 35px;
+  padding-left: 41px;
+}
+
+.social .email {
+  background: url(../images/socialicons.jpg) 521px 498px;
+}
+
+.social .facebook {
+  background: url(../images/socialicons.jpg) 184px 565px;
+}
+
+.social .twitter {
+  background: url(../images/socialicons.jpg) 184px 430px;
+}
+
+#lastMessage {
+  display: none;
+}
+
+#lastMessage .title {
+  font-family: 'KlavikaLight';
+  font-size: 52px;
+  position: absolute;
+  text-decoration: underline;
+  color: #fff;
+  top: 20px;
+  right: 20px;
+}
+
+#lastMessage .body {
+  font-family: 'KlavikaLight';
+  font-size: 14px;
+  position: absolute;
+  color: #fff;
+  top: 260px;
+  right: 10px;
+  text-align: right;
+  padding-right: 10px;
+}
+
+#lastMessage .body a {
+  color: #fff;
+}
+
+#logo {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  color: #fff;
+  font-family: 'KlavikaRegular';
+  font-size: 22px;
+  width: 83px;
+  text-align: center;
+}
+
+@media  only screen and (max-width: 1300px) {
+  .sentence {
+    font-size: 32px;
+  }
+}
